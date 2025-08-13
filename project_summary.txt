@@ -1,0 +1,44 @@
+
+AGRICULTURAL SUBSIDY FRAUD DETECTION - GRAPHML MODEL
+====================================================
+
+Dataset Overview:
+- Total Farmers: 2,000
+- Total Subsidy Applications: 6,006
+- Total Processing Officials: 50
+- Total Institutions: 20
+- Fraud Rate: 4.9%
+
+Graph Structure:
+- Total Nodes: 8,076
+- Total Edges: 18,518
+- Graph Density: 0.000568
+- Average Degree: 4.59
+
+Best Performing Models:
+- Best F1-Score: Gradient Boosting (ML) (0.7568)
+- Best AUC: Logistic Regression (ML) (0.9750)
+
+GraphML Models Performance:
+- GraphSAGE: AUC=0.9091, F1=0.3855
+- GCN: AUC=0.7839, F1=0.2784
+- GAT: AUC=0.7872, F1=0.3158
+
+Traditional ML Models Performance:
+- Gradient Boosting: AUC=0.9625, F1=0.7568
+- Logistic Regression: AUC=0.9750, F1=0.5064
+- Random Forest: AUC=0.9036, F1=0.6800
+- SVM: AUC=0.9046, F1=0.5283
+
+Key Findings:
+1. Traditional ML models generally outperform GNNs on this specific dataset
+2. Gradient Boosting achieved the highest F1-score (0.7568)
+3. Logistic Regression achieved the highest AUC (0.9750)
+4. GraphSAGE was the best performing GNN model
+5. The graph structure provides additional context but feature engineering is critical
+
+Files Generated:
+- farmers_data.csv: Individual farmer information
+- subsidy_applications.csv: Subsidy application details
+- merged_agricultural_data.csv: Combined dataset with derived features
+- model_performance_comparison.csv: Model performance metrics
